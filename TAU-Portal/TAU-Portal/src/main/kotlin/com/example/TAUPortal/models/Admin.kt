@@ -1,3 +1,3 @@
-data class Admin(
+data class Admin: User(
 
 )
