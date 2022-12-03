@@ -4,11 +4,11 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="$USER_HOME$/Downloads/.gradle" />
-        <option name="gradleJvm" value="corretto-16" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/TAU-Portal/TAU-Portal" />
+        <option name="gradleJvm" value="openjdk-18" />
         <option name="modules">
           <set>
-            <option value="$USER_HOME$/Downloads/.gradle" />
+            <option value="$PROJECT_DIR$/TAU-Portal/TAU-Portal" />
           </set>
         </option>
       </GradleProjectSettings>
