@@ -21,4 +21,10 @@ class UserController(val service: UserService) {
     suspend fun findUsers(): Flow<User> {
         return service.findUsers()
     }
+
+    // Get Methods
+    @PostMapping()
+    suspend fun saveUser(@RequestBody() user: User) {
+        return service.saveUser(user)
+    }
 }

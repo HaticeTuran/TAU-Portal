@@ -9,4 +9,8 @@ class UserService(val repository: UserRepository) {
     suspend fun findUsers(): Flow<User> {
         return repository.findAll()
     }
+
+    suspend fun saveUser(user: User){
+        repository.save(user)
+    }
 }
