@@ -23,8 +23,16 @@ dependencies {
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
 	runtimeOnly("org.postgresql:postgresql")
 	runtimeOnly("org.postgresql:r2dbc-postgresql")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+
+	implementation("org.springframework.boot:spring-boot-starter-webflux")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+
+	developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+	testImplementation("io.mockk:mockk:1.12.5")
 }
 
 tasks.withType<KotlinCompile> {
