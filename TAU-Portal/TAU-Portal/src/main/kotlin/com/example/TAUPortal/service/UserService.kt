@@ -6,7 +6,7 @@ import java.util.UUID
 @Service
 class UserService(val repository: UserRepository) {
 
-    suspend fun findUsers(): Flow<Users> {
+    suspend fun findUsers(): Flow<User> {
         return repository.findAll()
     }
 }
