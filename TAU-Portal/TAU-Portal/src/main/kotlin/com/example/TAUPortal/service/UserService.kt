@@ -1,7 +1,9 @@
+package com.example.TAUPortal.service
+
+import com.example.TAUPortal.models.User
+import com.example.TAUPortal.repository.UserRepository
 import kotlinx.coroutines.flow.Flow
 import org.springframework.stereotype.Service
-import org.springframework.web.bind.annotation.PathVariable
-import java.util.UUID
 
 @Service
 class UserService(val repository: UserRepository) {
