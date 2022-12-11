@@ -17,7 +17,7 @@ import java.util.UUID
 class UserController(val service: UserService) {
 
     // Get Methods
-    @GetMapping()
+    @GetMapping("/users")
     suspend fun findUsers(): Flow<User> {
         return service.findUsers()
     }
