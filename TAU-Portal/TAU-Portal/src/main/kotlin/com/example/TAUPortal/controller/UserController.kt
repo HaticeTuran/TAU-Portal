@@ -25,4 +25,22 @@ class UserController(val service: UserService) {
     suspend fun findUsers(): Flow<User> {
         return service.findUsers()
     }
+
+    @GetMapping("/{id}")
+    suspend fun findUserById(@PathVariable("id") id: UUID): User? {
+        return service.findUserById(id)
+    }
+
+    // Post Methods
+    @PostMapping()
+    suspend fun saveUser(@RequestBody user: User){
+        service.saveUser(user)
+    }
+
+    // Delete Methods
+    @DeleteMapping("/{id}")
+    suspend fun deleteComment(@PathVariable("id") id: UUID){
+        service.deleteUserById(id)
+    }
+
 }
